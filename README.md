@@ -28,6 +28,9 @@ More results can be found in [project page](https://menyifang.github.io/projects
 (2024-09-25) The project page, demo video and technical report are released. The full paper version with more details is in process.
 
 
+## Code release plan
+
+In response to the numerous inquiries we have received about the source code or a demo, we appreciate all the interest in our project. We are actively working on an online demo for everyone to try out, and it will be available recently. Additionally, we plan to release the source code and pretrained model upon paper acceptance. We will keep you updated on our progress here and thank you for your patience. Something may be late but never absent～
 
 
 
