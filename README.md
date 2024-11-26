@@ -1,6 +1,6 @@
 # MIMO - Official PyTorch Implementation
 
-### [Project page](https://menyifang.github.io/projects/MIMO/index.html) | [Paper](https://arxiv.org/abs/2409.16160) | [Video](https://www.youtube.com/watch?v=skw9lPKFfcE)
+### [Project page](https://menyifang.github.io/projects/MIMO/index.html) | [Paper](https://arxiv.org/abs/2409.16160) | [Video](https://www.youtube.com/watch?v=skw9lPKFfcE) | [Online Demo](https://modelscope.cn/studios/iic/MIMO)
 
 **MIMO: Controllable Character Video Synthesis with Spatial Decomposed Modeling**<br>
 [Yifang Men](https://menyifang.github.io/), 
@@ -25,6 +25,10 @@ More results can be found in [project page](https://menyifang.github.io/projects
 
 
 ## Updates
+
+(2024-11-26) The online demo (v1.0) is available on ModelScope now! Try out [![ModelScope Spaces](
+https://img.shields.io/badge/ModelScope-Spaces-blue)](https://modelscope.cn/studios/iic/MIMO). The 2.0 version to support custom driving videos will be coming soon.
+
 (2024-09-25) The project page, demo video and technical report are released. The full paper version with more details is in process.
 
 
