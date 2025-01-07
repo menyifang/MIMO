@@ -26,8 +26,11 @@ More results can be found in [project page](https://menyifang.github.io/projects
 
 ## Updates
 
+(2024-01-07) The online demo (v1.5) supporting custom driving videos is available now! Try out [![ModelScope Spaces](
+https://img.shields.io/badge/ModelScope-Spaces-blue)](https://modelscope.cn/studios/iic/MIMO).
+
 (2024-11-26) The online demo (v1.0) is available on ModelScope now! Try out [![ModelScope Spaces](
-https://img.shields.io/badge/ModelScope-Spaces-blue)](https://modelscope.cn/studios/iic/MIMO). The 2.0 version to support custom driving videos will be coming soon.
+https://img.shields.io/badge/ModelScope-Spaces-blue)](https://modelscope.cn/studios/iic/MIMO). The 1.5 version to support custom driving videos will be coming soon.
 
 (2024-09-25) The project page, demo video and technical report are released. The full paper version with more details is in process.
 
