@@ -1,0 +1,87 @@
+version: 2
+jobs:
+  python2:
+    docker:
+      - image: circleci/python:2
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install container dependencies
+          command: |
+            sudo apt-get --allow-releaseinfo-change update
+            sudo apt-get install -qq gfortran liblapack-dev
+
+      - run:
+          name: Install python dependencies
+          command: |
+            mkdir -p venv
+            virtualenv venv
+            . venv/bin/activate
+            # Hack to disable the progress bar
+            set -o pipefail; pip install -r requirements.txt | cat
+
+      - run:
+          name: Show versions
+          command: |
+            . venv/bin/activate
+            pip freeze
+
+      - run:
+          name: Run tests
+          command: |
+            . venv/bin/activate
+            make test
+
+  python3:
+    docker:
+      - image: circleci/python:3
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install container dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -qq gfortran liblapack-dev
+
+      - run:
+          name: Install python dependencies
+          command: |
+            python -m venv venv
+            . venv/bin/activate
+            # Hack to disable the progress bar
+            set -o pipefail; pip install -r requirements.txt | cat
+
+      - run:
+          name: Show versions
+          command: |
+            . venv/bin/activate
+            pip freeze
+
+      - run:
+          name: Run tests
+          command: |
+            . venv/bin/activate
+            make test
+
+workflows:
+  version: 2
+
+  on-commit:
+    jobs:
+      - python2
+      - python3
+
+  daily:
+    triggers:
+      - schedule:
+          cron: "0 17 * * *"
+          filters:
+            branches:
+              only: master
+    jobs:
+      - python2
+      - python3

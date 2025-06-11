@@ -1,0 +1,14 @@
+assign:
+  strategy:
+    # random
+    daily-shift-based
+  scedule:
+    '*/1 * * * *'
+  assignees:
+    - zhouzaida
+    - ice-tong
+    - HAOCHENYE
+    - zhouzaida
+    - ice-tong
+    - HAOCHENYE
+    - zhouzaida

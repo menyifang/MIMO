@@ -1,0 +1,10 @@
+omegaconf==2.3.0
+accelerate==0.33.0
+mlflow==2.9.2
+controlnet-aux==0.0.7
+av==12.3.0
+transformers==4.42.4
+numpy==1.26.3
+imageio[ffmpeg]
+gradio==5.33.0
+huggingface-hub==0.25.0
