@@ -24,7 +24,7 @@ More results can be found in [project page](https://menyifang.github.io/projects
 
 
 ## 📢 News
-(2025-06-11) The code is released! It differs from our full implementation in the paper, but could achieve comparable performance.
+(2025-06-11) The code is released! We released a simplified version of full implementation, but it could achieve comparable performance.
 
 (2025-02-27) The paper is accepted by CVPR 2025! The full version of the paper is available on [arXiv](https://arxiv.org/abs/2409.16160).
 
@@ -146,7 +146,12 @@ bash setup.sh
 you can also use dockerfile(`video_decomp/docker/decomp.dockerfile`) to build a docker image with all dependencies installed.
 
 
-- download model weights and data from [google drive](*) and put them under `${PROJECT_ROOT}/video_decomp/models` and `${PROJECT_ROOT}/video_decomp/assets` respectively.
+- download model weights and data from [Huggingface](https://huggingface.co/menyifang/MIMO_VidDecomp/tree/main) and put them under `${PROJECT_ROOT}/video_decomp/`.
+
+```python
+from huggingface_hub import snapshot_download 
+model_dir = snapshot_download(repo_id='menyifang/MIMO_VidDecomp', cache_dir='./video_decomp/')
+```
 
 
 - process the driving video by
