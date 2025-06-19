@@ -89,7 +89,7 @@ Download pretrained weights of based model and other components:
 
 #### Data Preparation
 
-Download examples and resources (`assets.zip`) from [google drive](https://drive.google.com/file/d/1qf4sSQggAJZUnBP0GLHkVR12IjeKw_6j/view?usp=drive_link) and unzip it under `${PROJECT_ROOT}/`.
+Download examples and resources (`assets.zip`) from [google drive](https://drive.google.com/file/d/1dg0SDAxEARClYq_6L1T1XIfWvC5iA8WD/view?usp=drive_link) and unzip it under `${PROJECT_ROOT}/`.
 You can also process custom videos following [Process driving templates](#process-driving-templates).
 
 After downloading weights and data, the folder of the project structure seems like:
