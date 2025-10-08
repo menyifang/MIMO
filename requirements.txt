@@ -4,7 +4,10 @@ mlflow==2.9.2
 controlnet-aux==0.0.7
 av==12.3.0
 transformers==4.42.4
-numpy==1.26.3
-imageio[ffmpeg]
+numpy==2.2.6
+imageio==2.37.0
+imageio-ffmpeg==0.6.0
 gradio==5.33.0
-huggingface-hub==0.25.0
+huggingface-hub==0.23.5
+diffusers==0.24.0
+typing_extensions==4.15.0
